@@ -1,4 +1,5 @@
-from loguru import logger
+from ai_hawk.job_manager import AIHawkJobManager
+from src.logging import logger
 
 
 class AIHawkBotState:
@@ -28,7 +29,7 @@ class AIHawkBotFacade:
     def __init__(self, login_component, apply_component):
         logger.debug("Initializing AIHawkBotFacade")
         self.login_component = login_component
-        self.apply_component = apply_component
+        self.apply_component : AIHawkJobManager = apply_component
         self.state = AIHawkBotState()
         self.job_application_profile = None
         self.resume = None
