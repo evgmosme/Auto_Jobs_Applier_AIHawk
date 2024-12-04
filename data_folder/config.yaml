@@ -24,10 +24,12 @@ date:
   24 hours: true
 
 positions:
-  - Software engineer
+  - Data Scientist
+  - Data Engineer
+
 
 locations:
-  - Germany
+  - Finland
 
 apply_once_at_company: true
 
